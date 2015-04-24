@@ -41,18 +41,49 @@ class: center middle
 ---
 # Git & Github 入門
 ## ゴール
-- Gitの概要を理解している
-- Githubの概要を理解している
 - 今後の開発に必要な作業をソースコード管理をSourceTreeを使って行える
 
 ## 内容
-- GitとGithubについて簡単に説明する
+- Git・Githubについて
+- SouceTreeについて
 - SourceTreeを使ってGithubのリポジトリを更新する
 - ブランチを作ってマージする
 ---
-# GitとGithubについて簡単に説明する
-- [GitとGithubで始めるバージョン管理](http://www.slideshare.net/zephiransas/git-14810093)
+# Git・Githubについて
+## Git
+- [サルでもわかるGit入門](http://www.backlog.jp/git-guide/)
+ - [Gitを使ったバージョン管理](http://www.backlog.jp/git-guide/intro/intro1_1.html)
+ - [リポジトリの共有](http://www.backlog.jp/git-guide/intro/intro3_1.html)
+ - [変更履歴の統合](http://www.backlog.jp/git-guide/intro/intro5_1.html)
+ - [ブランチ](http://www.backlog.jp/git-guide/stepup/stepup1_1.html)
 
+## Github
+- [Githubとは](http://jp.techcrunch.com/2012/07/15/20120714what-exactly-is-github-anyway/)
+- Githubの使い方
+ - [Githubの登録](http://www.atmarkit.co.jp/ait/articles/1407/22/news019.html)
+ - [SSHの公開鍵を作成しGithubに登録する手順](http://monsat.hatenablog.com/entry/generating-ssh-keys-for-github)
+---
+# SouceTreeについて
+## SouceTree
+- [Gitのインストール（SouceTreeのインストール）](http://www.backlog.jp/git-guide/intro/intro2_1.html)
+- [SourceTree の使い方](http://celtislab.net/archives/20140527/git-sourcetree/)
+- [SourceTreeをさらに使いこなすための便利機能](http://ics-web.jp/lab/archives/1365)
+---
+# Gitの用語
+- リポジトリ：ファイルやディレクトリの状態を記録する場所
+- リモートリポジトリ：専用のサーバに配置して複数人で共有するためのリポジトリ
+- ローカルリポジトリ：ユーザ一人ひとりが利用するために、自分の手元のマシン上に配置するリポジトリ
+- コミット：ファイルやディレクトリの追加・変更を、リポジトリに記録
+- ワークツリー：Gitの管理下に置かれた、みなさんが実際に作業をしているディレクトリ
+- インデックス：リポジトリにコミットする準備をするための場所
+- プッシュ：ローカルリポジトリの変更履歴をリモートリポジトリに共有する
+- クローン：リモートリポジトリの内容をまるまるダウンロードしてきて、別のマシンにローカルリポジトリとして作成する
+- プル：リモートリポジトリの変更内容をローカルリポジトリに取り込む
+---
+# Githubの用語
+- プルリクエスト：開発者のローカルのリポジトリでPushした変更や機能追加を、
+ほかの開発者のリポジトリやブランチに取り込んでもらうためのリクエストを出す機能
+- フォーク：他の開発者のリポジトリを github 上で クローン する
 ---
 # SourceTreeを使ってGithubのリポジトリを更新する
 - SourceTreeとGithubを連携させる
@@ -65,7 +96,7 @@ class: center middle
 ---
 # ブランチを作ってマージする
 - ブランチを作る
-- ファイルをコピーして差分を作る
+- ファイルをコピー作成して差分を作る
 - 差分をステージに上げる
 - commitする
 - GithubにPushする
@@ -84,7 +115,8 @@ class: center middle
 ---
 # 開発環境の説明
 - Mac
-- Google Chrome
+- Google Chrome（オプション付き起動）
+ - `open -a Google\ Chrome --args -allow-file-access-from-files`
 - Github
 - SourceTree
 - CotEditor
@@ -94,10 +126,10 @@ class: center middle
 
 ---
 # 実際に作業をしてみる
-- サンプルリポジトリを自分のGithubリポジトリにforkする
+- サンプルリポジトリをフォークする
 - ローカル環境にクローンする
-- 何かしら変更を加えて commit => push する
-- ブランチを作った上で、何かしら変更を加えて commit => push する
+- masterブランチで何かしら変更を加えて commit => push する
+- 新しいブランチを作った上で、何かしら変更を加えて commit => push する
 - 作ったブランチをmasterブランチに プルリク => マージ する
 ---
 # Google Spread Sheet を使った簡易DBについて
@@ -109,17 +141,29 @@ class: center middle
 - 実際に作業をしてみる
 ---
 # GoogleDocs上に記録仕組みについて
-## Google Apps Script
+## Google Apps Script とは
 - Googleが提供するサーバーサイド・スクリプト環境
 - Googleの提供しているサービスであればなんでも連携させて一つの仕事ができる
  - スプレッドシートをマクロのように動かす
  - スプレッドシートから予定をカレンダーに自動登録する
  - カレンダーの予定を毎朝自動でメールで通知する
  - スプレッドシートから差込メール*を送る
+- [参考URL](http://libro.tuyano.com/index2?id=638001)
 ---
-# 実際に作業をしてみる
+# 実際に作業をしてみる１
 - Googleスプレッドシートを作る
 - スプレッドシートにGoogle Apps Scriptを紐付ける
+ - 手順
+   - 「ツール」 > 「スクリプトエディタ」 をクリック
+   - 適当な名前を付ける
+   - コード.gsの中身を全部消して、スクリプトサンプルの内容をコピペする
+   - 「実行」 > 「doPost」 をクリック（承認をする。その後エラーが起きてOK。）
+   - 「公開」 > 「ウェブアプリケーションとして導入」 をクリック
+   - 「アプリケーションにアクセスできるユーザー:」は「全員（匿名ユーザーを含む）」にし、後は適当に記載して更新ボタンを押す
+ - [スプレッドシートサンプル](https://docs.google.com/spreadsheets/d/1ROrXaNtQJJ3jmXjCqm_DoBqL1n2WzQNNFo-qyYFKA7I/edit#gid=0)
+ - [スクリプトサンプル](https://script.google.com/macros/d/ME_0G-DCAkIk8CEn3YuQNZt2VmIwYkfDl/edit?uiv=2&mid=ACjPJvFtR14BRlzHXf877dVQUQHRFRVhUj3zvZKAQbP8HAcF3hqo2W4AN9SPfDg6lm-xLKL7MhBgD_EdT5DDixGZ0ZdNDHg50SlQcg582M-OP5SreCfHC7NFkUcoqwcuyPAvd-G96ito1_s)
+---
+# 実際に作業をしてみる２
 - サンプル用のKey値をスプレッドシートに記載する
 - ローカル開発したものに記録用のライブラリを追加する
 - ローカル開発したものに記録するためのコードを追加する
