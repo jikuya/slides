@@ -210,13 +210,12 @@ class: center middle
 # 記録用スプレッドシートを作る
 - Googleスプレッドシートを作る
 - スプレッドシートにGoogle Apps Scriptを紐付ける
- - 手順
-   - 「ツール」 > 「スクリプトエディタ」 をクリック
-   - 適当な名前を付ける
-   - コード.gsの中身を全部消して、スクリプトサンプルの内容をコピペする
-   - 「実行」 > 「doPost」 をクリック（承認をする。その後エラーが起きてOK。）
-   - 「公開」 > 「ウェブアプリケーションとして導入」 をクリック
-   - 「アプリケーションにアクセスできるユーザー:」は「全員（匿名ユーザーを含む）」にし、後は適当に記載して更新ボタンを押す
+ - 「ツール」 > 「スクリプトエディタ」 をクリック
+ - 適当な名前を付ける
+ - コード.gsの中身を全部消して、スクリプトサンプルの内容をコピペする
+ - 「実行」 > 「doPost」 をクリック（承認をする。その後エラーが起きてOK。）
+ - 「公開」 > 「ウェブアプリケーションとして導入」 をクリック
+ - 「アプリケーションにアクセスできるユーザー:」は「全員（匿名ユーザーを含む）」にし、後は適当に記載して更新ボタンを押す
  - [スプレッドシートサンプル](https://docs.google.com/spreadsheets/d/1ROrXaNtQJJ3jmXjCqm_DoBqL1n2WzQNNFo-qyYFKA7I/edit#gid=1751069508)
  - [スクリプトサンプル](https://script.google.com/macros/d/ME_0G-DCAkIk8CEn3YuQNZt2VmIwYkfDl/edit?uiv=2&mid=ACjPJvFtR14BRlzHXf877dVQUQHRFRVhUj3zvZKAQbP8HAcF3hqo2W4AN9SPfDg6lm-xLKL7MhBgD_EdT5DDixGZ0ZdNDHg50SlQcg582M-OP5SreCfHC7NFkUcoqwcuyPAvd-G96ito1_s)
 ---
