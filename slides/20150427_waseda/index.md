@@ -5,11 +5,22 @@ class: center middle
 .right[軸屋 邦彦　　　]
 ---
 # 授業の流れ
+- 授業の準備
 - 自己紹介
 - チーム作業について
 - Git & Github 入門
 - tmlib.js を使った ゲーム開発について
 - Google Spread Sheet を使った簡易DBについて
+---
+# 授業の準備
+- このスライドを開く
+- [Github](https://github.com)にログインする
+- SouceTreeを立ち上げておく
+- ターミナルを立ち上げておく（Macユーザのみ）
+- Googleスプレッドシートを開いておく
+- Google Chromeをオプション付きで開く
+ - Mac：ターミナルでコマンド実行 `open -a Google\ Chrome --args`
+ - Windows：[この手順通りにやる](http://www.finefinefine.jp/web/jquery/kiji861/)
 ---
 # 自己紹介
 - 軸屋 邦彦(30歳)
@@ -61,7 +72,7 @@ class: center middle
 - [Githubとは](http://jp.techcrunch.com/2012/07/15/20120714what-exactly-is-github-anyway/)
 - Githubの使い方
  - [Githubの登録](http://www.atmarkit.co.jp/ait/articles/1407/22/news019.html)
- - [SSHの公開鍵を作成しGithubに登録する手順](http://monsat.hatenablog.com/entry/generating-ssh-keys-for-github)
+ - [SSHの公開鍵を作成しGithubに登録する手順（SouceTreeを使い場合は飛ばしてOK）](http://monsat.hatenablog.com/entry/generating-ssh-keys-for-github)
 ---
 # SouceTreeについて
 ## SouceTree
@@ -111,24 +122,36 @@ class: center middle
 ## 内容
 - 開発環境について
 - ファイル構成について
-- 実際に作業をしてみる
+- 実際に作業をしてみ
 ---
 # 開発環境の説明
-- Mac
-- Google Chrome（オプション付き起動）
- - `open -a Google\ Chrome --args -allow-file-access-from-files`
-- Github
-- SourceTree
-- CotEditor
+- Mac or Windows
+- [Google Chrome](https://www.google.co.jp/chrome/browser/desktop/index.html)（オプション付き起動）
+ - Mac：ターミナルでコマンド実行 `open -a Google\ Chrome --args`
+ - Windows：[この手順通りにやる](http://www.finefinefine.jp/web/jquery/kiji861/)
+- [Github](https://github.com/)
+- [SourceTree](http://www.sourcetreeapp.com/)
+- テキストエディタ
+ - Mac： [CotEditor](http://techacademy.jp/magazine/4720)
+ - Windows： [Notepad++](http://techacademy.jp/magazine/4724)
+ - [その他](http://qiita.com/jikuya/private/e4d074154f835ff7d7d9)
 ---
 # ファイル構成について
 - ○×クイズを例に「runstant」と「サンプルリポジトリ」を比較しながら説明する
  - [runstant](http://goo.gl/lZJMLz)
  - [サンプルリポジトリ](https://github.com/phi-jp/tmlib.js-yesnoquiz)
-- 設定ファイルなどの定数は、別ファイルにする
-- 画像や音は、ファイルを直接指定
+
+
+- ２つの違い
+ - 最初に読み込まれるファイルはindex.html
+ - その中から必要なjavascriptファイルを読み込んで実行している
+ - 設定ファイルなどの定数は、別ファイルにしている
+ - 画像や音は、ファイルを直接指定している
 ---
 # 実際に作業をしてみる
+- Google Chromeをオプション付きで開く
+ - Mac：ターミナルでコマンド実行 `open -a Google\ Chrome --args`
+ - Windows：[この手順通りにやる](http://www.finefinefine.jp/web/jquery/kiji861/)
 - [サンプルリポジトリ](https://github.com/phi-jp/tmlib.js-yesnoquiz)をフォークする
 - ローカル環境にクローンする
 - masterブランチで、constant.js内にある問題文を変更してを加えて commit => push する
@@ -141,7 +164,8 @@ class: center middle
 
 ## 内容
 - GoogleDocs上に記録仕組みについて
-- 実際に作業をしてみる
+- 記録用のGoogleスプレッドシートを作る
+- サンプルゲームのスコアを自分が作ったスプレッドシートに記録する
 ---
 # GoogleDocs上に記録仕組みについて
 ## Google Apps Script とは
@@ -153,7 +177,7 @@ class: center middle
  - スプレッドシートから差込メール*を送る
 - [参考URL](http://libro.tuyano.com/index2?id=638001)
 ---
-# 実際に作業をしてみる１
+# 記録用のGoogleスプレッドシートを作る
 - Googleスプレッドシートを作る
 - スプレッドシートにGoogle Apps Scriptを紐付ける
  - 手順
@@ -163,12 +187,10 @@ class: center middle
    - 「実行」 > 「doPost」 をクリック（承認をする。その後エラーが起きてOK。）
    - 「公開」 > 「ウェブアプリケーションとして導入」 をクリック
    - 「アプリケーションにアクセスできるユーザー:」は「全員（匿名ユーザーを含む）」にし、後は適当に記載して更新ボタンを押す
- - [スプレッドシートサンプル](https://docs.google.com/spreadsheets/d/1ROrXaNtQJJ3jmXjCqm_DoBqL1n2WzQNNFo-qyYFKA7I/edit#gid=0)
+ - [スプレッドシートサンプル](https://docs.google.com/spreadsheets/d/1ROrXaNtQJJ3jmXjCqm_DoBqL1n2WzQNNFo-qyYFKA7I/edit#gid=1751069508)
  - [スクリプトサンプル](https://script.google.com/macros/d/ME_0G-DCAkIk8CEn3YuQNZt2VmIwYkfDl/edit?uiv=2&mid=ACjPJvFtR14BRlzHXf877dVQUQHRFRVhUj3zvZKAQbP8HAcF3hqo2W4AN9SPfDg6lm-xLKL7MhBgD_EdT5DDixGZ0ZdNDHg50SlQcg582M-OP5SreCfHC7NFkUcoqwcuyPAvd-G96ito1_s)
 ---
-# 実際に作業をしてみる２
-- サンプル用のKey値をスプレッドシートに記載する
-- ローカル開発したものに記録用のライブラリを追加する
-- ローカル開発したものに記録するためのコードを追加する
-- GoogleChromeをオプション付きで起動する
-- 実際にゲームを動かして、スプレッドシートにレコードが追加されるか確認する
+# サンプルゲームのスコアを自分が作ったスプレッドシートに記録する
+- サンプル用のカラム名をスプレッドシートに記載する
+- 先ほど作ったサンプルのconstant.js内にある、スプレッドシートのURLを自分が作ったものに変更する
+- 実際にゲームを動かして、自分のスプレッドシートにレコードが追加されるか確認する
