@@ -122,14 +122,17 @@ class: center middle
 - CotEditor
 ---
 # ファイル構成について
-- サンプルリポジトリを例に説明する
-
+- ○×クイズを例に「runstant」と「サンプルリポジトリ」を比較しながら説明する
+ - [runstant](http://goo.gl/lZJMLz)
+ - [サンプルリポジトリ](https://github.com/phi-jp/tmlib.js-yesnoquiz)
+- 設定ファイルなどの定数は、別ファイルにする
+- 画像や音は、ファイルを直接指定
 ---
 # 実際に作業をしてみる
-- サンプルリポジトリをフォークする
+- [サンプルリポジトリ](https://github.com/phi-jp/tmlib.js-yesnoquiz)をフォークする
 - ローカル環境にクローンする
-- masterブランチで何かしら変更を加えて commit => push する
-- 新しいブランチを作った上で、何かしら変更を加えて commit => push する
+- masterブランチで、constant.js内にある問題文を変更してを加えて commit => push する
+- 新しいブランチを作った上で、constant.js内にある問題文を変更して commit => push する
 - 作ったブランチをmasterブランチに プルリク => マージ する
 ---
 # Google Spread Sheet を使った簡易DBについて
