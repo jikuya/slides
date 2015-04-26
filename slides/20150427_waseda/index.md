@@ -86,7 +86,7 @@ class: center middle
 - [Githubとは](http://jp.techcrunch.com/2012/07/15/20120714what-exactly-is-github-anyway/)
 - Githubの使い方
  - [Githubの登録](http://www.atmarkit.co.jp/ait/articles/1407/22/news019.html)
- - [SSHの公開鍵を作成しGithubに登録する手順（SouceTreeを使い場合は飛ばしてOK）](http://monsat.hatenablog.com/entry/generating-ssh-keys-for-github)
+ - [SSHの公開鍵を作成しGithubに登録する手順（SouceTreeを使う場合は飛ばしてOK）](http://monsat.hatenablog.com/entry/generating-ssh-keys-for-github)
 ---
 # SouceTreeについて
 ## SouceTree
@@ -99,7 +99,7 @@ class: center middle
 - リモートリポジトリ：専用のサーバに配置して複数人で共有するためのリポジトリ
 - ローカルリポジトリ：ユーザ一人ひとりが利用するために、自分の手元のマシン上に配置するリポジトリ
 - コミット：ファイルやディレクトリの追加・変更を、リポジトリに記録
-- ワークツリー：Gitの管理下に置かれた、みなさんが実際に作業をしているディレクトリ
+- ワークツリー：Gitの管理下に置かれた、実際に作業をするディレクトリ
 - インデックス：リポジトリにコミットする準備をするための場所
 - プッシュ：ローカルリポジトリの変更履歴をリモートリポジトリに共有する
 - クローン：リモートリポジトリの内容をまるまるダウンロードしてきて、別のマシンにローカルリポジトリとして作成する
@@ -108,7 +108,7 @@ class: center middle
 # Githubの用語
 - プルリクエスト：開発者のローカルのリポジトリでPushした変更や機能追加を、
 ほかの開発者のリポジトリやブランチに取り込んでもらうためのリクエストを出す機能
-- フォーク：他の開発者のリポジトリを github 上で クローン する
+- フォーク：他の開発者のリポジトリを github 上で クローン する機能
 ---
 # SourceTreeを使ってGithubのリポジトリを更新する
 - SourceTreeとGithubを連携させる
@@ -194,7 +194,7 @@ class: center middle
 
 ## 内容
 - GoogleDocs上に記録仕組みについて
-- 記録用のGoogleスプレッドシートを作る
+- 記録用スプレッドシートを作る
 - サンプルゲームのスコアを自分が作ったスプレッドシートに記録する
 ---
 # GoogleDocs上に記録仕組みについて
@@ -207,7 +207,7 @@ class: center middle
  - スプレッドシートから差込メール*を送る
 - [参考URL](http://libro.tuyano.com/index2?id=638001)
 ---
-# 記録用のGoogleスプレッドシートを作る
+# 記録用スプレッドシートを作る
 - Googleスプレッドシートを作る
 - スプレッドシートにGoogle Apps Scriptを紐付ける
  - 手順
