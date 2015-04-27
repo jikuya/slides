@@ -4,28 +4,28 @@ class: center middle
 
 .right[軸屋 邦彦　　　]
 ---
-# 授業の流れ
-- 授業の準備
-- 自己紹介
-- チーム作業について
-- Git & Github 入門
-- tmlib.js を使った ゲーム開発について
-- Google Spread Sheet を使った簡易DBについて
----
 # 授業の準備
 - このスライドを開く
-- [Github](https://github.com)にログインする
-- SouceTreeを立ち上げておく
-- ターミナルを立ち上げておく（Macユーザのみ）
-- Googleスプレッドシートを開いておく
+- 進捗シートを開く[（教育工学研究法01）](https://docs.google.com/a/dena.jp/spreadsheets/d/1T98FBpvoxOBaMvipnF1MBqnlWsYz8kgtDuN18UcbxNc/edit#gid=2102025050)・[(教育工学研究法03)](https://docs.google.com/a/dena.jp/spreadsheets/d/1K0i7CUWkISPQZgJ5lYSMsxRSu8rZjDnU40kQrKUkNaQ/edit#gid=1837835513)
+- [Github](https://github.com)を開き自分のアカウントでログインする
+- SouceTreeを立ち上げる
+- ターミナルを立ち上げる（Macユーザのみ）
 - Google Chromeをオプション付きで開く
- - Mac：ターミナルでコマンド実行
+ - Mac：ターミナルで以下のコマンドを実行する
   - `open -a Google\ Chrome --args -allow-file-access-from-files`
  - Windows：[この手順通りにやる](http://www.finefinefine.jp/web/jquery/kiji861/)
 ---
+# 授業の流れ
+- 自己紹介
+- チーム作業について
+- Git & Github 入門
+- Git & Github 実践
+- tmlib.js を使った ゲーム開発について
+- Google Spread Sheet を使った簡易DBについて
+---
 # 自己紹介
 - 軸屋 邦彦(30歳)
-- 慶応義塾大学経済学部出身
+- 慶応義塾大学 経済学部
 - 楽天 => DeNA
 - Webアプリケーションエンジニア
  - PHP・Perl・Ruby
@@ -35,6 +35,7 @@ class: center middle
 - ~~自己紹介~~
 - **チーム作業について**
 - Git & Github 入門
+- Git & Github 実践
 - tmlib.js を使った ゲーム開発について
 - Google Spread Sheet を使った簡易DBについて
 ---
@@ -62,18 +63,19 @@ class: center middle
 - ~~自己紹介~~
 - ~~チーム作業について~~
 - **Git & Github 入門**
+- Git & Github 実践
 - tmlib.js を使った ゲーム開発について
 - Google Spread Sheet を使った簡易DBについて
 ---
 # Git & Github 入門
 ## ゴール
-- 今後の開発に必要な作業をソースコード管理をSourceTreeを使って行える
+- Git・Githubの用語を理解し、各操作が何を行っているかイメージできる状態になる
 
 ## 内容
 - Git・Githubについて
 - SouceTreeについて
-- SourceTreeを使ってGithubのリポジトリを更新する
-- ブランチを作ってマージする
+- Gitの基本
+- Githubの機能
 ---
 # Git・Githubについて
 ## Git
@@ -95,46 +97,47 @@ class: center middle
 - [SourceTree の使い方](http://celtislab.net/archives/20140527/git-sourcetree/)
 - [SourceTreeをさらに使いこなすための便利機能](http://ics-web.jp/lab/archives/1365)
 ---
-# Gitの用語
-- リポジトリ：ファイルやディレクトリの状態を記録する場所
-- リモートリポジトリ：専用のサーバに配置して複数人で共有するためのリポジトリ
-- ローカルリポジトリ：ユーザ一人ひとりが利用するために、自分の手元のマシン上に配置するリポジトリ
-- コミット：ファイルやディレクトリの追加・変更を、リポジトリに記録
-- ワークツリー：Gitの管理下に置かれた、実際に作業をするディレクトリ
-- インデックス：リポジトリにコミットする準備をするための場所
-- プッシュ：ローカルリポジトリの変更履歴をリモートリポジトリに共有する
-- クローン：リモートリポジトリの内容をまるまるダウンロードしてきて、別のマシンにローカルリポジトリとして作成する
-- プル：リモートリポジトリの変更内容をローカルリポジトリに取り込む
+# Gitの基本
+- [Git用語集](http://qiita.com/jikuya/private/5280940d8087c2b44309)
+
 ---
-# Githubの用語
-- プルリクエスト：開発者のローカルのリポジトリでPushした変更や機能追加を、
-ほかの開発者のリポジトリやブランチに取り込んでもらうためのリクエストを出す機能
-- フォーク：他の開発者のリポジトリを github 上で クローン する機能
----
-# SourceTreeを使ってGithubのリポジトリを更新する
-- SourceTreeとGithubを連携させる
-- Githubで新規リポジトリを作る
-- SouceTreeでローカルにクローンする
-- ファイルをコピーして差分を作る
-- 差分をステージに上げる
-- commitする
-- Githubにpushする
----
-# ブランチを作ってマージする
-- ブランチを作る
-- ファイルをコピー作成して差分を作る
-- 差分をステージに上げる
-- commitする
-- GithubにPushする
-- Github上でプルリクエストを出す
-- Github上でプルリクエストをマージする
-- SourceTreeを使ってmasterブランチを更新する
+# Githubの機能
+- [Github用語集](http://qiita.com/jikuya/private/0116145090ca41627b26)
+
 ---
 # 授業の流れ
 - ~~授業の準備~~
 - ~~自己紹介~~
 - ~~チーム作業について~~
 - ~~Git & Github 入門~~
+- **Git & Github 実践**
+- tmlib.js を使った ゲーム開発について
+- Google Spread Sheet を使った簡易DBについて
+---
+# Git & Github 実践
+## ゴール
+- 今後の開発に必要な作業をソースコード管理をSourceTreeを使って行える
+
+## 内容
+- 課題に解きながらSouceTreeを通したGit・Githubの操作を学ぶ
+
+## 課題の流れ
+1. 課題を解説
+2. 課題の通りに操作
+3. 進捗シートにGithubで作ったリポジトリのURLを記載[（教育工学研究法01）](https://docs.google.com/a/dena.jp/spreadsheets/d/1T98FBpvoxOBaMvipnF1MBqnlWsYz8kgtDuN18UcbxNc/edit#gid=2102025050)・[(教育工学研究法03)](https://docs.google.com/a/dena.jp/spreadsheets/d/1K0i7CUWkISPQZgJ5lYSMsxRSu8rZjDnU40kQrKUkNaQ/edit#gid=1837835513)
+---
+# 課題
+- Q1. SourceTreeとGithubの連携
+- Q2. リポジトリ作成からプッシュまでの一連の操作
+- Q3. ブランチ作成からプッシュまでの一連の操作
+- Q4. プルリクエストとマージ
+---
+# 授業の流れ
+- ~~授業の準備~~
+- ~~自己紹介~~
+- ~~チーム作業について~~
+- ~~Git & Github 入門~~
+- ~~Git & Github 実践~~
 - **tmlib.js を使った ゲーム開発について**
 - Google Spread Sheet を使った簡易DBについて
 ---
@@ -161,16 +164,8 @@ class: center middle
  - [その他](http://qiita.com/jikuya/private/e4d074154f835ff7d7d9)
 ---
 # ファイル構成について
-- ○×クイズを例に「runstant」と「サンプルリポジトリ」を比較しながら説明する
- - [runstant](http://goo.gl/lZJMLz)
- - [サンプルリポジトリ](https://github.com/phi-jp/tmlib.js-yesnoquiz)
+- ○×クイズを例に[「サンプルリポジトリ」](https://github.com/phi-jp/tmlib.js-yesnoquiz)を見ながら解説
 
-
-- ２つの違い
- - 最初に読み込まれるファイルはindex.html
- - その中から必要なjavascriptファイルを読み込んで実行している
- - 設定ファイルなどの定数は、別ファイルにしている
- - 画像や音は、ファイルを直接指定している
 ---
 # 実際に作業をしてみる
 - Google Chromeをオプション付きで開く
@@ -188,6 +183,7 @@ class: center middle
 - ~~自己紹介~~
 - ~~チーム作業について~~
 - ~~Git & Github 入門~~
+- ~~Git & Github 実践~~
 - ~~tmlib.js を使った ゲーム開発について~~
 - **Google Spread Sheet を使った簡易DBについて**
 ---
