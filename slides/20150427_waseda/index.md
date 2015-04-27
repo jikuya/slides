@@ -19,7 +19,8 @@ class: center middle
 - ターミナルを立ち上げておく（Macユーザのみ）
 - Googleスプレッドシートを開いておく
 - Google Chromeをオプション付きで開く
- - Mac：ターミナルでコマンド実行 `open -a Google\ Chrome --args`
+ - Mac：ターミナルでコマンド実行
+  - `open -a Google\ Chrome --args -allow-file-access-from-files`
  - Windows：[この手順通りにやる](http://www.finefinefine.jp/web/jquery/kiji861/)
 ---
 # 自己紹介
@@ -149,7 +150,8 @@ class: center middle
 # 開発環境の説明
 - Mac or Windows
 - [Google Chrome](https://www.google.co.jp/chrome/browser/desktop/index.html)（オプション付き起動）
- - Mac：ターミナルでコマンド実行 `open -a Google\ Chrome --args`
+ - Mac：ターミナルでコマンド実行
+  - `open -a Google\ Chrome --args -allow-file-access-from-files`
  - Windows：[この手順通りにやる](http://www.finefinefine.jp/web/jquery/kiji861/)
 - [Github](https://github.com/)
 - [SourceTree](http://www.sourcetreeapp.com/)
@@ -172,7 +174,8 @@ class: center middle
 ---
 # 実際に作業をしてみる
 - Google Chromeをオプション付きで開く
- - Mac：ターミナルでコマンド実行 `open -a Google\ Chrome --args`
+ - Mac：ターミナルでコマンド実行 `
+  -a Google\ Chrome --args`
  - Windows：[この手順通りにやる](http://www.finefinefine.jp/web/jquery/kiji861/)
 - [サンプルリポジトリ](https://github.com/phi-jp/tmlib.js-yesnoquiz)をフォークする
 - ローカル環境にクローンする
