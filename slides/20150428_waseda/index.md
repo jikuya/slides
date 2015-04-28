@@ -186,7 +186,6 @@ class: center middle
 
 ## 内容
 - GoogleDocs上に記録仕組みについて
-- 記録用スプレッドシートを作る
 - サンプルゲームのスコアを自分が作ったスプレッドシートに記録する
 ---
 # GoogleDocs上に記録仕組みについて
@@ -199,22 +198,9 @@ class: center middle
  - スプレッドシートから差込メール*を送る
 - [参考URL](http://libro.tuyano.com/index2?id=638001)
 ---
-# 記録用スプレッドシートを作る
-- Googleスプレッドシートを作る
-- スプレッドシートにGoogle Apps Scriptを紐付ける
- - 「ツール」 > 「スクリプトエディタ」 をクリック
- - 適当な名前を付ける
- - コード.gsの中身を全部消して、スクリプトサンプルの内容をコピペする
- - 「実行」 > 「doPost」 をクリック（承認をする。その後エラーが起きてOK。）
- - 「公開」 > 「ウェブアプリケーションとして導入」 をクリック
- - 「アプリケーションにアクセスできるユーザー:」は「全員（匿名ユーザーを含む）」にし、後は適当に記載して更新ボタンを押す
- - [スプレッドシートサンプル](https://docs.google.com/spreadsheets/d/1ROrXaNtQJJ3jmXjCqm_DoBqL1n2WzQNNFo-qyYFKA7I/edit#gid=1751069508)
- - [スクリプトサンプル](https://script.google.com/macros/d/ME_0G-DCAkIk8CEn3YuQNZt2VmIwYkfDl/edit?uiv=2&mid=ACjPJvFtR14BRlzHXf877dVQUQHRFRVhUj3zvZKAQbP8HAcF3hqo2W4AN9SPfDg6lm-xLKL7MhBgD_EdT5DDixGZ0ZdNDHg50SlQcg582M-OP5SreCfHC7NFkUcoqwcuyPAvd-G96ito1_s)
----
 # サンプルゲームのスコアを自分が作ったスプレッドシートに記録する
-- サンプル用のカラム名をスプレッドシートに記載する
-- 先ほど作ったサンプルのconstant.js内にある、スプレッドシートのURLを自分が作ったものに変更する
-- 実際にゲームを動かして、自分のスプレッドシートにレコードが追加されるか確認する
+- Q1. [Googleスプレッドシートで簡易DBを作る](http://qiita.com/jikuya/private/f925ef545cbcf842b191)
+
 ---
 class: center middle
 # End
