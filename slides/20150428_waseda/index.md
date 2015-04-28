@@ -168,15 +168,8 @@ class: center middle
 
 ---
 # 実際に作業をしてみる
-- Google Chromeをオプション付きで開く
- - Mac：ターミナルでコマンド実行 `
-  -a Google\ Chrome --args`
- - Windows：[この手順通りにやる](http://www.finefinefine.jp/web/jquery/kiji861/)
-- [サンプルリポジトリ](https://github.com/phi-jp/tmlib.js-yesnoquiz)をフォークする
-- ローカル環境にクローンする
-- masterブランチで、constant.js内にある問題文を変更してを加えて commit => push する
-- 新しいブランチを作った上で、constant.js内にある問題文を変更して commit => push する
-- 作ったブランチをmasterブランチに プルリク => マージ する
+-  Q1. [サンプルリポジトリをフォークしてプルリクエスト・マージまでを行う](http://qiita.com/jikuya/private/26eb30b7e1747c629097)
+
 ---
 # 授業の流れ
 - ~~授業の準備~~
