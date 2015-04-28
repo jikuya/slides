@@ -127,10 +127,10 @@ class: center middle
 3. 進捗シートにGithubで作ったリポジトリのURLを記載[（教育工学研究法01）](https://docs.google.com/a/dena.jp/spreadsheets/d/1T98FBpvoxOBaMvipnF1MBqnlWsYz8kgtDuN18UcbxNc/edit#gid=2102025050)・[(教育工学研究法03)](https://docs.google.com/a/dena.jp/spreadsheets/d/1K0i7CUWkISPQZgJ5lYSMsxRSu8rZjDnU40kQrKUkNaQ/edit#gid=1837835513)
 ---
 # 課題
-- Q1. SourceTreeとGithubの連携
-- Q2. リポジトリ作成からプッシュまでの一連の操作
-- Q3. ブランチ作成からプッシュまでの一連の操作
-- Q4. プルリクエストとマージ
+- Q1. [SourceTreeとGithubの連携](http://qiita.com/jikuya/private/899c1a6dfd7412b5242a)
+- Q2. [リポジトリ作成からプッシュまでの一連の操作](http://qiita.com/jikuya/private/c7fc3ded0bda367967dd)
+- Q3. [ブランチ作成からプッシュまでの一連の操作](http://qiita.com/jikuya/private/1cb0b32b597972f59fb8)
+- Q4. [プルリクエストとマージ](http://qiita.com/jikuya/private/04b3cf4c33fe33dff1aa)
 ---
 # 授業の流れ
 - ~~授業の準備~~
